@@ -1,0 +1,20 @@
+name: Auto Build Deploy Client
+on:
+  push:
+    paths:
+      - client/**
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run SSHPASS
+        run: |
+          sshpass \
+            -p ${{ secrets.SSH_PASS }} \
+            ssh \
+              -o 'StrictHostKeyChecking no' \
+              -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+              'cd /home/koompi/koompi/koompi.com/ && git checkout main && git pull && cd client && npm i --force && npm run build && pm2 restart 29'

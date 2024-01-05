@@ -1,0 +1,87 @@
+[
+  {
+    "fullname": "Rithy THUL",
+    "position": "Promoter",
+    "department": "digital-and-marketing",
+    "photo": "/images/team/rithy-thul.webp"
+  },
+  {
+    "fullname": "Brilliant PHAL",
+    "position": "OS Lead",
+    "department": "os-team",
+    "photo": "/images/team/brilliant.jpg"
+  },
+  {
+    "fullname": "Vuthy SAN",
+    "position": "Web Apps Dev Lead",
+    "department": "web-development",
+    "photo": "/images/team/vuthy.jpg"
+  },
+  {
+    "fullname": "Raksme VEN",
+    "position": "Finance & Vendor Relation",
+    "department": "finance",
+    "photo": "/images/team/raksme.jpg"
+  },
+  {
+    "fullname": "Theara THENG",
+    "position": "Social Marketing & Sale",
+    "department": "digital-and-marketing",
+    "photo": "/images/team/theara.jpg"
+  },
+  {
+    "fullname": " Makara VON",
+    "position": "Social Marketing & Sale",
+    "department": "digital-and-marketing",
+    "photo": "/images/team/makara-von.jpg"
+  },
+  {
+    "fullname": "Thith THIN",
+    "position": "Fulll Stack Developer",
+    "department": "web-development",
+    "photo": "/images/team/thith.jpg"
+  },
+  {
+    "fullname": "Soklay VANN",
+    "position": "Full Stack Developer",
+    "department": "web-development",
+    "photo": "/images/team/soklay.jpg"
+  },
+  {
+    "fullname": "Happy PHAL",
+    "position": "3D Designer",
+    "department": "graphic-design",
+    "photo": "/images/team/happy.jpg"
+  },
+  {
+    "fullname": "Hangsea HONG",
+    "position": "OS Developer",
+    "department": "os-team",
+    "photo": "/images/team/hangsea.jpg"
+  },
+
+  {
+    "fullname": "Pichponereay NGOR",
+    "position": "Network Devs",
+    "department": "network",
+    "photo": "/images/team/ponereay.jpg"
+  },
+  {
+    "fullname": "Sokunsamnang SAM AN ",
+    "position": "Network Devs",
+    "department": "network",
+    "photo": "/images/team/samnang.jpg"
+  },
+  {
+    "fullname": "Cheangmai MAN",
+    "position": "Lab facilitator at Siem Reap",
+    "department": "facilitator",
+    "photo": "/images/team/cheangmai.jpg"
+  },
+  {
+    "fullname": "Kim Sou OEUT",
+    "position": "Lab facilitator at Siem Reap",
+    "department": "facilitator",
+    "photo": "/images/team/kimsou.jpg"
+  }
+]

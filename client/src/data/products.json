@@ -1,0 +1,47 @@
+[
+  {
+    "id": "e11",
+    "inch": "11.6",
+    "title": "KOOMPI E11",
+    "image": "e11.png",
+    "desc": "Built for students, the KOOMPI E11 is your starting point for computing. As compact as the E13, but lighter. No compromise on open-source performance. Perfect for students on the go.",
+    "link": "/koompi-e11",
+    "price": 179
+  },
+  {
+    "id": "e13",
+    "inch": "13.3",
+    "title": "KOOMPI E13",
+    "image": "e13.png",
+    "desc": "Immerse yourself into endless possibilities. Start with the classic KOOMPI, the E13. Built-in integrated software suite. Lightweight and compact",
+    "link": "/koompi-e13",
+    "price": 369
+  },
+  {
+    "id": "mini",
+    "inch": null,
+    "title": "KOOMPI Mini",
+    "image": "mini.png",
+    "desc": "An all-inclusive, professional powerhouse ready to be incorporated seamlessly into your workplace, classroom, or within the comfort of your own home. Meet the KOOMPI MiniStation.",
+    "link": "/koompi-mini",
+    "price": 259
+  },
+  {
+    "id": "monitor",
+    "inch": "24",
+    "title": "KOOMPI Monitor",
+    "image": "monitor.png",
+    "desc": "You can never have “too many” tabs with the KOOMPI Monitor. Simultaneously display more documents, media, and projects to get more done in less time.",
+    "link": "/koompi-monitor",
+    "price": 199
+  },
+  {
+    "id": "ministation",
+    "inch": "",
+    "title": "KOOMPI Ministation",
+    "image": "ministation.png",
+    "desc": "You can never have “too many” tabs with the KOOMPI Monitor. Simultaneously display more documents, media, and projects to get more done in less time.",
+    "link": "/koompi-monitor",
+    "price": 428
+  }
+]
