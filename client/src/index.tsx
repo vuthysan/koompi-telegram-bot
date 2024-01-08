@@ -4,6 +4,7 @@ import "remixicon/fonts/remixicon.css";
 import App from "./App";
 import { CartProvider } from "./contexts/cart";
 import { Router } from "@solidjs/router";
+import { WebAppProvider } from "@vkruglikov/react-telegram-web-app";
 import { createEffect } from "solid-js";
 /* @refresh reload */
 import { render } from "solid-js/web";
@@ -19,9 +20,15 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(
   () => (
     <Router>
-      <CartProvider>
-        <App />
-      </CartProvider>
+      <WebAppProvider
+        options={{
+          smoothButtonsTransition: true,
+        }}
+      >
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </WebAppProvider>
     </Router>
   ),
   root!

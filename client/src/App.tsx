@@ -61,6 +61,11 @@ const App: Component = () => {
 
         <MainButton text={` View Order (${quantity()})`} />
 
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         {/* {location.pathname !== "/koompi/os" && <Footer />} */}
       </MetaProvider>
     </>
