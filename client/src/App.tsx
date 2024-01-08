@@ -1,14 +1,11 @@
 import { A, Route, Routes } from "@solidjs/router";
 import { Component, lazy } from "solid-js";
-import {
-  MainButton,
-  MainButtonProps,
-} from "@vkruglikov/react-telegram-web-app";
 
 import About from "./pages/about";
 import E13 from "./pages/koompi/e13";
 import E13Speces from "./pages/koompi/e13/spece";
 import Home from "./pages";
+import { MainButton } from "@vkruglikov/react-telegram-web-app";
 import { MetaProvider } from "@solidjs/meta";
 import Mini from "./pages/koompi/mini";
 import Monitor from "./pages/koompi/monitor";
@@ -59,7 +56,10 @@ const App: Component = () => {
           )}
         </div>
 
-        <MainButton text={` View Order (${quantity()})`} />
+        <MainButton
+          text="CLICK ME"
+          onClick={() => console.log("Hello, I am button!")}
+        />
 
         <br />
         <br />
