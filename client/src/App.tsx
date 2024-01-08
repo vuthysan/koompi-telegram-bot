@@ -1,16 +1,14 @@
-import { A, Route, Routes, useLocation } from "@solidjs/router";
+import { A, Route, Routes } from "@solidjs/router";
 import { Component, lazy } from "solid-js";
+import { MainButton, useShowPopup } from "@vkruglikov/react-telegram-web-app";
 
 import About from "./pages/about";
-import Coming from "./components/Coming";
 import E13 from "./pages/koompi/e13";
 import E13Speces from "./pages/koompi/e13/spece";
-import Footer from "./components/Footer";
 import Home from "./pages";
 import { MetaProvider } from "@solidjs/meta";
 import Mini from "./pages/koompi/mini";
 import Monitor from "./pages/koompi/monitor";
-import Navbar from "./components/Navbar";
 import NotFound from "./pages/404";
 import OS from "./pages/os";
 import OneLab from "./pages/onelab";
@@ -22,19 +20,19 @@ const E11 = lazy(() => import("./pages/koompi/e11"));
 const E11Speces = lazy(() => import("./pages/koompi/e11/spece"));
 
 const App: Component = () => {
-  const location = useLocation();
-  const {
-    items,
-    quantity,
-    addToCart,
-    removeItem,
-    subQuantity,
-    addQuantity,
-    total,
-  }: any = useCart();
+  const { quantity }: any = useCart();
+
+  const showPopup = useShowPopup();
+
+  const handleClick = () =>
+    showPopup({
+      message: "Hello, I am popup",
+    });
 
   return (
     <>
+      <MainButton text="SHOW POPUP" onClick={handleClick} />
+
       <MetaProvider>
         {/* {location.pathname !== "/koompi/os" && <Navbar />} */}
         <div class="relative">
