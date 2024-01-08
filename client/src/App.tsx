@@ -1,6 +1,9 @@
 import { A, Route, Routes } from "@solidjs/router";
 import { Component, lazy } from "solid-js";
-import { MainButton, useShowPopup } from "@vkruglikov/react-telegram-web-app";
+import {
+  MainButton,
+  MainButtonProps,
+} from "@vkruglikov/react-telegram-web-app";
 
 import About from "./pages/about";
 import E13 from "./pages/koompi/e13";
@@ -22,17 +25,8 @@ const E11Speces = lazy(() => import("./pages/koompi/e11/spece"));
 const App: Component = () => {
   const { quantity }: any = useCart();
 
-  const showPopup = useShowPopup();
-
-  const handleClick = () =>
-    showPopup({
-      message: "Hello, I am popup",
-    });
-
   return (
     <>
-      <MainButton text="SHOW POPUP" onClick={handleClick} />
-
       <MetaProvider>
         {/* {location.pathname !== "/koompi/os" && <Navbar />} */}
         <div class="relative">
@@ -64,6 +58,8 @@ const App: Component = () => {
             </A>
           )}
         </div>
+
+        <MainButton text={` View Order (${quantity()})`} />
 
         {/* {location.pathname !== "/koompi/os" && <Footer />} */}
       </MetaProvider>
