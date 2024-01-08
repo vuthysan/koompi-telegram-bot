@@ -1,5 +1,5 @@
+import { A, Route, Routes, useLocation } from "@solidjs/router";
 import { Component, lazy } from "solid-js";
-import { Route, Routes, useLocation } from "@solidjs/router";
 
 import About from "./pages/about";
 import Coming from "./components/Coming";
@@ -15,12 +15,24 @@ import NotFound from "./pages/404";
 import OS from "./pages/os";
 import OneLab from "./pages/onelab";
 import Project from "./pages/project";
+import cart from "./pages/cart";
+import { useCart } from "./contexts/cart";
 
 const E11 = lazy(() => import("./pages/koompi/e11"));
 const E11Speces = lazy(() => import("./pages/koompi/e11/spece"));
 
 const App: Component = () => {
   const location = useLocation();
+  const {
+    items,
+    quantity,
+    addToCart,
+    removeItem,
+    subQuantity,
+    addQuantity,
+    total,
+  }: any = useCart();
+
   return (
     <>
       <MetaProvider>
@@ -42,9 +54,17 @@ const App: Component = () => {
             </Route>
             <Route path="/projects" component={Project} />
             <Route path="/about" component={About} />
-            <Route path="/cart" component={Coming} />
+            <Route path="/cart" component={cart} />
             <Route path="/*" component={NotFound} />
           </Routes>
+
+          {quantity() > 0 && (
+            <A href="/cart">
+              <div class="fixed bottom-0 left-0 bg-primary w-full p-4 text-center text-white font-semibold">
+                View Order ({quantity()})
+              </div>
+            </A>
+          )}
         </div>
 
         {/* {location.pathname !== "/koompi/os" && <Footer />} */}

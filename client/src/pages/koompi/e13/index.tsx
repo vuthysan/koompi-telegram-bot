@@ -26,12 +26,6 @@ export default function E13() {
 
   return (
     <>
-      <Subnavbar
-        title="KOOMPI E13"
-        overviewLink="/koompi/e13/overview"
-        techLink="/koompi/e13/specs"
-      />
-
       <Hero
         colorCode="bg-error"
         background="bg-[url(/images/background.jpg)]"
@@ -53,7 +47,7 @@ export default function E13() {
       />
 
       {/* Shapeliness */}
-      <div data-aos="zoom-in-up" class="bg-gray-200/80 md:p-0 p-2">
+      <div class="bg-gray-200/80 md:p-0 p-2">
         <div class="container mx-auto">
           <div class="max-w-screen-lg mx-auto py-24">
             <div class="text-center">
@@ -141,10 +135,7 @@ export default function E13() {
       />
 
       <div>
-        <div
-          data-aos="zoom-in-up"
-          class="bg-white  grid md:grid-cols-2 grid-cols-1 gap-4 "
-        >
+        <div class="bg-white  grid md:grid-cols-2 grid-cols-1 gap-4 ">
           <div class="flex items-center justify-center flex-col md:p-0 py-8">
             <h2 class="font-bold text-xl text-slate-500">GET READY</h2>
             <h2 class=" font-extrabold text-4xl text-center">

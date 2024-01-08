@@ -9,10 +9,7 @@ export default function Performance(props: {
       {/* Performance */}
       <div class="bg-white">
         <div>
-          <div
-            data-aos="zoom-in-up"
-            class="flex md:flex-row flex-col justify-center items-center gap-4"
-          >
+          <div class="flex md:flex-row flex-col justify-center items-center gap-4">
             <div class="w-screen">
               <img src={props.image} alt="" class="lg:max-w-4xl w-full" />
             </div>

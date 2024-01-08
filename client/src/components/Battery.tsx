@@ -9,7 +9,7 @@ export default function Battery(props: {
   return (
     <>
       <div class="min-h-full ">
-        <div data-aos="zoom-in-up" class="container mx-auto mt-20 mb-12">
+        <div class="container mx-auto mt-20 mb-12">
           <div class="flex justify-center flex-col items-center ">
             <div
               class={`${[

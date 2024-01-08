@@ -7,7 +7,7 @@ export default function Screen(props: {
   return (
     <>
       {/* Screen */}
-      <div data-aos="zoom-in-up" class="min-h-full overflow-hidden">
+      <div class="min-h-full overflow-hidden">
         <div class="container mx-auto my-20">
           <div class="max-w-screen-lg mx-auto">
             <div class="flex justify-center flex-col items-center ">

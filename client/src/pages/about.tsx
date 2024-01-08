@@ -28,7 +28,7 @@ export default function About() {
         </div>
       </div>
 
-      <div data-aos="zoom-in-up" class="relative lg:h-[100vh] h-[70vh]">
+      <div class="relative lg:h-[100vh] h-[70vh]">
         <img
           src="/images/pexels-rodolfo-clix-1036936.jpg"
           alt="KOOMPI Vision"
@@ -46,7 +46,7 @@ export default function About() {
         </div>
       </div>
 
-      <div data-aos="zoom-in-up" class="relative lg:h-[100vh] h-[70vh]">
+      <div class="relative lg:h-[100vh] h-[70vh]">
         <img
           src="/images/mission.jpg"
           alt="KOOMPI Mission"
@@ -65,7 +65,7 @@ export default function About() {
       </div>
 
       {/* Talent People */}
-      <div data-aos="zoom-in-up" class="container m-auto">
+      <div class="container m-auto">
         <h3 class="col-span-2 font-black lg:text-9xl text-5xl text-primary/20 text-center mt-20">
           Our Talents
         </h3>
@@ -117,7 +117,7 @@ export default function About() {
       </div>
 
       {/* Our Gallery */}
-      <div data-aos="zoom-in-up" class="container m-auto">
+      <div class="container m-auto">
         <h3 class="col-span-2 font-black lg:text-9xl text-5xl text-primary/20 text-center mt-20">
           Our Gallery
         </h3>

@@ -19,12 +19,6 @@ export default function E11() {
 
   return (
     <div class="overflow-hidden">
-      <Subnavbar
-        title="KOOMPI E11"
-        overviewLink="/koompi/e11"
-        techLink="/koompi/e11/specs"
-      />
-
       <Hero
         background="bg-[url(/images/background.png)]"
         title="KOOMPI E11"
@@ -48,10 +42,7 @@ export default function E11() {
       />
 
       {/* Shapeliness */}
-      <div
-        data-aos="zoom-in-up"
-        class="bg-gray-200/80 md:p-0 p-2 md:text-left text-center"
-      >
+      <div class="bg-gray-200/80 md:p-0 p-2 md:text-left text-center">
         <div class="container mx-auto">
           <div class="flex flex-col md:flex-row justify-center items-center gap-4 py-24">
             <div class="w-full ">
@@ -112,7 +103,7 @@ export default function E11() {
         }
       />
 
-      <div data-aos="zoom-in-up">
+      <div>
         <div class="bg-white grid md:grid-cols-2 grid-cols-1 gap-4 ">
           <div class="flex items-center justify-center flex-col md:p-0 py-8">
             <h2 class="font-bold text-xl text-slate-500">GET READY</h2>

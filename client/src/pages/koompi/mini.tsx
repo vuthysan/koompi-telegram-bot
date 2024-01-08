@@ -89,14 +89,14 @@ export default function Mini() {
       />
 
       {/* Shapeliness */}
-      <div data-aos="zoom-in-up" class="bg-gray-200/80 md:p-0 p-2">
+      <div class="bg-gray-200/80 md:p-0 p-2">
         <div class="container mx-auto">
-          <div class="max-w-screen-lg mx-auto py-24">
-            <div class="text-center">
-              <div class="md:text-6xl text-3xl font-black mb-10 ">
+          <div class="max-w-screen-lg mx-auto">
+            <div class="text-center pt-10">
+              <div class="md:text-6xl text-3xl font-black mb-8 ">
                 More ports, more connectivity
               </div>
-              <p class="text-lg md:w-5/6 w-6/6 mx-auto">
+              <p class="text-base md:w-5/6 w-6/6 mx-auto">
                 With Ethernet network, Headphone jack, 2 HDMI ports , and 2 USB
                 3.0 ports, 2 USB 2.0 ports, the KOOMPI Mini allows for more
                 connectivity than ever. Multiple screen sharing or external
@@ -105,86 +105,42 @@ export default function Mini() {
             </div>
 
             <div>
-              <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img
-                    src="/images/mini-specs.png"
-                    class="w-3/4 mx-auto mt-20"
-                    alt="koompi e13 rose-gold"
-                  />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">
-                      ❮
-                    </a>
-                    <a href="#slide2" class="btn btn-circle">
-                      ❯
-                    </a>
-                  </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img
-                    src="/images/mini-specs2.png"
-                    class="w-3/4 mx-auto mt-20"
-                    alt="koompi e13 rose-gold"
-                  />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">
-                      ❮
-                    </a>
-                    <a href="#slide3" class="btn btn-circle">
-                      ❯
-                    </a>
-                  </div>
-                </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img
-                    src="/images/mini-specs3.png"
-                    class="w-3/4 mx-auto mt-20"
-                    alt="koompi e13 rose-gold"
-                  />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">
-                      ❮
-                    </a>
-                    <a href="#slide1" class="btn btn-circle">
-                      ❯
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <img
+                src="/images/mini-specs.png"
+                class="mx-auto pt-8 pb-8"
+                alt="koompi e13 rose-gold"
+              />
             </div>
           </div>
         </div>
       </div>
 
       {/* Performance */}
-      <div data-aos="zoom-in-up" class="bg-white">
+      <div class="bg-white">
         <div>
           <div class="grid md:grid-cols-2 items-center justify-center">
-            <img src="/images/mini4.jpg" alt="koompi mini" />
             <div class="md:px-1 px-8 md:py-0 py-4 md:pb-0 pb-8 text-center">
-              <div class="bg-error inline-block rounded-[50px] px-2 py-1 text-white md:text-base text-sm">
+              <div class="bg-error inline-block rounded-[50px] px-2 py-1 text-white md:text-base text-xs">
                 PERFORMANCE
               </div>
-              <div class="md:text-6xl text-3xl font-black mb-10">
-                Compact and capable
-              </div>
-              <p class="text-lg md:w-4/6 w-6/6 m-auto">
+              <div class="text-3xl font-black mb-6">Compact and capable</div>
+              <p class="text-base w-full m-auto">
                 Don't let the size fool you. The KOOMPI Mini makes no
                 compromises with performance, as its sleek hardware comes with
                 endless possibilities to create.
               </p>
             </div>
+            <img src="/images/mini4.jpg" alt="koompi mini" />
           </div>
         </div>
       </div>
 
       {/* Use cases */}
-      <div data-aos="zoom-in-up" class="bg-white">
+      <div class="bg-white">
         <div>
-          <div class=" grid md:grid-cols-2 items-center justify-center">
-            <div class="md:order-first order-last md:px-1 px-8 md:py-0 py-4 text-center ">
-              <div class="bg-error inline-block rounded-[50px] px-2 py-1 text-white md:text-base text-sm">
+          <div class="grid md:grid-cols-2 items-center justify-center">
+            <div class="px-4 md:py-0 py-4 text-center ">
+              <div class="bg-error inline-block rounded-[50px] px-2 py-1 text-white md:text-base text-xs">
                 Use Cases
               </div>
               <div class="md:text-6xl text-3xl font-black mb-10">
@@ -195,49 +151,29 @@ export default function Mini() {
                 or SMEs looking for affordability inclusive of high performance
                 and versatility.
               </p>
-
-              <div class="grid md:grid-cols-4 grid-cols-2 gap-2 items-center justify-center mt-10 md:w-5/6  m-auto">
-                <UseCase
-                  title="Company"
-                  usecase={useCase()}
-                  handleChangeUseCase={() => handleChangeUseCase("Company")}
-                />
-                <UseCase
-                  title="Computer Labs"
-                  usecase={useCase()}
-                  handleChangeUseCase={() =>
-                    handleChangeUseCase("Computer Labs")
-                  }
-                />
-                <UseCase
-                  title="Study Setup"
-                  usecase={useCase()}
-                  handleChangeUseCase={() => handleChangeUseCase("Study Setup")}
-                />
-                <UseCase
-                  title="Home Office"
-                  usecase={useCase()}
-                  handleChangeUseCase={() => handleChangeUseCase("Home Office")}
-                />
-              </div>
             </div>
-            <div>{handleUseCaseImage()}</div>
+            <img
+              src="/images/home-office.png"
+              alt="koompi mini"
+              class="bg-[#f6f6f7] p-4"
+            />
+            {/* <div>{handleUseCaseImage()}</div> */}
           </div>
         </div>
       </div>
 
       {/* BATTERY */}
-      <div data-aos="zoom-in-up" class="min-h-full ">
+      <div class="min-h-full ">
         <div class="container mx-auto mt-20 mb-12">
           <div class="flex justify-center flex-col items-center ">
-            <div class="bg-error inline-block rounded-[50px] px-2 py-1 text-white md:text-base text-sm">
+            <div class="bg-error inline-block rounded-[50px] px-2 py-1 text-white md:text-base text-xs">
               KOOMPI OS
             </div>
             <div class="md:text-6xl text-3xl font-black text-center mb-10 md:w-5/6 w-6/6  m-auto">
               Maximize productivity with KOOMPI OS
             </div>
 
-            <p class="text-lg md:w-4/6 w-6/6 md:px-0 px-2 mx-auto text-center mb-8">
+            <p class="text-base w-full md:px-0 px-2 mx-auto text-center mb-8">
               The MiniStation runs on KOOMPI OS, a multi-purpose OS used for
               both desktop and enterprise servers. Our R&D team takes pride in
               their continued dedication to advancing features focused on areas
@@ -247,26 +183,19 @@ export default function Mini() {
           <img
             src="/images/company.png"
             alt="koompi mini"
-            class="md:w-4/6 w-6/6 mx-auto md:my-12 my-4"
+            class="w-full mx-auto md:my-12 my-4"
           />
         </div>
       </div>
 
-      <div data-aos="zoom-in-up">
+      <div>
         <div class="bg-white  grid md:grid-cols-3 grid-cols-1 gap-4 ">
-          <img
-            src="/images/309614435_175943884970655_3602007539239903560_n.jpg"
-            alt="koompi mini"
-            class="w-full"
-          />
           <div class="flex items-center justify-center flex-col md:p-0 py-8">
-            <h2 class="font-bold text-xl text-slate-500">GET READY</h2>
-            <h2 class=" font-extrabold text-4xl text-center">
-              Order KOOMPI Mini
-            </h2>
+            <h2 class="font-bold text-lg opacity-50">Get Ready</h2>
+            <h2 class=" font-black text-2xl text-center">Order KOOMPI Mini</h2>
 
             <button
-              class="my-8 btn btn-disabled px-10 rounded-[50px] text-white text-sm font-semibold"
+              class="my-4 bg-primary px-6 py-2 font-bold rounded-[50px] text-white"
               onClick={() => handleAddToCart()}
             >
               Order Now
