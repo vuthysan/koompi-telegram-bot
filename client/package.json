@@ -25,6 +25,8 @@
   "dependencies": {
     "@solidjs/meta": "^0.28.5",
     "@solidjs/router": "^0.8.2",
+    "@twa-dev/sdk": "^6.9.2",
+    "@twa-dev/types": "^6.9.0",
     "@vkruglikov/react-telegram-web-app": "^2.1.9",
     "remixicon": "^3.4.0",
     "solid-js": "^1.7.6",

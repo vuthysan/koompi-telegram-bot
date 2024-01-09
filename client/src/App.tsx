@@ -5,7 +5,7 @@ import About from "./pages/about";
 import E13 from "./pages/koompi/e13";
 import E13Speces from "./pages/koompi/e13/spece";
 import Home from "./pages";
-import { MainButton } from "@vkruglikov/react-telegram-web-app";
+import { MainButton } from "@twa-dev/sdk/react";
 import { MetaProvider } from "@solidjs/meta";
 import Mini from "./pages/koompi/mini";
 import Monitor from "./pages/koompi/monitor";
@@ -13,6 +13,7 @@ import NotFound from "./pages/404";
 import OS from "./pages/os";
 import OneLab from "./pages/onelab";
 import Project from "./pages/project";
+import WebApp from "@twa-dev/sdk";
 import cart from "./pages/cart";
 import { useCart } from "./contexts/cart";
 
@@ -57,8 +58,10 @@ const App: Component = () => {
         </div>
 
         <MainButton
-          text="CLICK ME"
-          onClick={() => console.log("Hello, I am button!")}
+          text="Hello"
+          onClick={() => {
+            WebApp.showAlert("Hello World");
+          }}
         />
 
         <br />
